@@ -23,7 +23,8 @@ html, body {
     float: left;
     margin: 10px;
 }
- 
+
+
 .clear {
     clear: both;
 }
@@ -72,6 +73,11 @@ small {
     margin-top: 20px;
     padding: 5px;
     background: #f1f1f1;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+small:hover {
+    transform: scaleX(1.1);
 }
 
 .reactor-container {
@@ -91,6 +97,12 @@ small {
 
 .reactor-container reactor-x img:hover {
     filter: brightness(50%);
+} 
+reactor-x div{
+    margin: 15px auto;
+}
+.imgdiv {
+    height: 200px;
 } 
 button {
     cursor: pointer;
