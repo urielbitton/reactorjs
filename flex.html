@@ -2,24 +2,25 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-        <title>Flex</title>   
-	</head>    
+        <title>Flex</title>
+        <script src="index.js"></script>
+	</head>     
 	<body>    
-        
-        <div class="reactorapp" data-appid="1">
+         
+        <div class="reactorapp">
         <reactor-vars>{title, price, descript, btn, prodid}</reactor-vars>
-	<reactor-imgs>{img1, img2}</reactor-imgs>    
+	<reactor-imgs>{img1}</reactor-imgs>    
          
         <div class="reactor">
             <img src="{img1}"/>
-            <img src="{img2}"/>
-            <h4>{title}</h4>
-            <p>{price}</p>
+            <h4>{title}</h4>    
+            <p>{price}</p>  
             <p>{descript}</p>  
             <button>{btn}</button>  
-            <small>{prodid}</small>  
+            <small>{prodid}</small> 
+                
         </div> 
-         
+          
          
        </div> 
          
