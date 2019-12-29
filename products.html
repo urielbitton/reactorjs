@@ -10,16 +10,18 @@
          
         <div ng-include="'flex.html'"></div>       
          
-        <div class="reactor-container grid">   
-            
+           
+            <div class="first">
             <reactor-x data-img1="https://picsum.photos//id/21/201/300" data-title="Tester1" data-price="$100" data-descript="this is d1" data-btn="btn1" data-prodid="001"></reactor-x>
-            <reactor-x data-img1="https://picsum.photos/id/32/202/300" data-title="Tester2" data-price="$200" data-descript="this is d2" data-btn="btn2" data-prodid="002"></reactor-x>
+            <reactor-x reactor-special data-img1="https://picsum.photos/id/32/202/300" data-title="Tester2" data-price="$200" data-descript="this is d2" data-btn="btn2" data-prodid="002" data-discount="40% off"></reactor-x>
             <reactor-x data-img1="https://picsum.photos/id/42/203/300" data-title="Tester3" data-price="$300" data-descript="this is d3" data-btn="btn4" data-prodid="003"></reactor-x>
-            <reactor-x data-img1="https://picsum.photos/id/54/204/300" data-title="Tester4" data-price="$500" data-descript="this is d4" data-btn="btn5" data-prodid="004"></reactor-x>
-
+            <reactor-x reactor-special data-img1="https://picsum.photos/id/54/204/300" data-title="Tester4" data-price="$500" data-descript="this is d4" data-btn="btn5" data-prodid="004" data-discount="20% off"></reactor-x>
+             </div>
+             
+          
         <div class="clear"></div>
-        </div> 
-         
+          <div style="height: 200px;"></div>
+          
         </div>
 	</body>
 </html>

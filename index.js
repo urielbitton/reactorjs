@@ -10,15 +10,15 @@ $(document).ready(function() {
 propsDesign();
 liveWrite();
 beam();     
-debug();
-
+ 
 function propsDesign() {    
 //remove reactor models    
 $('head').append('<style>.reactor,reactor-vars, reactor-imgs, reactor-container{display:none!important}</style>'); 
 var appid = {};      
 var reactorapp = $('.reactorapp');
 var appnum = reactorapp.length;       
-          
+$('.reactor-special').fadeOut(0);          
+      
 //big appnum for loop     
 for(k=0;k<appnum;k++) {    
 $('.app').eq(k).addClass('app'+k);
@@ -63,7 +63,11 @@ for(i=0;i<featflexsize;i++) {
         $('.app'+k+' '+rcont+':nth-of-type('+(i+1)+')').find('*').filter(function() {
             return this.innerHTML == '{'+propsarray[j]+'}';     
         }).html(reactarray[j]); 
-    }    
+    }
+    if($('[reactor-special]').length) {
+        $('[reactor-special]').find('.reactor-special').fadeIn(0); 
+    }
+     
 }  
 }  
 //end of big appnum for loop  
@@ -93,31 +97,9 @@ function beam() {
       
 }
    
-listRepeater();    
-function listRepeater() {
-    var lists = $('.reactor-list').length;
-    $('head').append('<style>list-repeat{display:none!important}</style>'); 
-    for(k=0;k<lists;k++) {
-        
-        var listrepeat = $('.reactor-list:nth-of-type('+(k+1)+') list-repeat');
-        listrepeat = listrepeat.html();
-        listrepeat = listrepeat.replace(new RegExp('{|}', 'g'),"");  
-        var listarray = listrepeat.split(',');
-        var listcontainer = $('.reactor-list:nth-of-type('+(k+1)+') [re-repeat]');
-        for(i=0;i<listarray.length;i++) {
-             listcontainer.append('<li>'+listarray[i]+'</li>');   
-        };
-    }
-}   
    
    
-//Debug tests
-
-function debug() {
-    if($('.reactortest').length) {
-        alert("reactor is live");
-    }   
-}    
+    
     
     
 }); 

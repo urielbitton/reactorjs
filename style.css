@@ -9,11 +9,11 @@ html, body {
     width: 1300px;
     padding: 50px 0px;
 }
- .reactor-container reactor-x {
+ .reactor-container reactor-x, .first reactor-x {
     width: 200px;
     height: auto;
     position: relative;
-    float: left;
+    display: inline-block;
     margin: 30px;
 }
 .reactor-container2 reactor-x {
@@ -84,7 +84,7 @@ small:hover {
     text-align: center;
     margin: auto;
 }
-.reactor-container reactor-x img {
+.reactor-container reactor-x img, .first reactor-x img {
     transition: all 0.4s;
     cursor: pointer;
 } 
@@ -95,7 +95,7 @@ small:hover {
     object-fit: cover;
 }
 
-.reactor-container reactor-x img:hover {
+.reactor-container reactor-x img:hover, .first reactor-x img:hover  {
     filter: brightness(50%);
 } 
 reactor-x div{
@@ -146,4 +146,13 @@ footer a:hover {
 .col {
     float: left;
     margin: auto 50px;
+}
+
+
+.reactor-special {
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    background: lime;
+    padding: 7px 13px;
 }

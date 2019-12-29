@@ -8,19 +8,21 @@
 	<body>    
          
         <div class="reactorapp">
-        <reactor-vars>{title, price, descript, btn, prodid}</reactor-vars>
-	<reactor-imgs>{img1}</reactor-imgs>    
+        <reactor-container>{reactor-x}</reactor-container>
+        <reactor-vars>{title, price, descript, btn, prodid, discount}</reactor-vars>
+	<reactor-imgs>{img1}</reactor-imgs>   
          
         <div class="reactor">
             <img src="{img1}"/>
+            <p class="reactor-special">{discount}</p>
             <h4>{title}</h4>    
             <p>{price}</p>  
             <p>{descript}</p>  
             <button>{btn}</button>  
             <small>{prodid}</small> 
-                
+                 
         </div> 
-          
+             
          
        </div> 
          
