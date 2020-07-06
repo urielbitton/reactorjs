@@ -10,7 +10,7 @@ The only other dependency is naturally Jquery, as Reactor JS is written in Jquer
 CDN
 You can use the Reactor Framework by copying the link below from our cdn or downloading it from our server.
 
-<script src="http://reactor-js.com/reactor/reactor_2.3.5.js"></script>
+http://reactor-js.com/reactor/reactor_2.3.5.js
 
 WHAT IS REACTOR JS?
 Reactor JS is a highly modular and powerful framework designed to help you create custom web designs with much less code.
