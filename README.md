@@ -3,7 +3,7 @@ Reactor JS is a highly modular and powerful framework designed to help you creat
 
 
 GETTING STARTED
-To get started quickly, Reactor JS has only two dependencies. The Jquery library and Angular JS. Reactor utilizes Angular to load pages and allow them to communicate with each other. Reactor relies on this functionality to function properly.
+To get started quickly, Reactor JS has only one dependency; The Jquery library. Reactor uses jquery to load pages and allow them to communicate with each other. Reactor relies on this functionality to function properly.
 
 The only other dependency is naturally Jquery, as Reactor JS is written in Jquery and Javascript.
 
